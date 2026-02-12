@@ -132,7 +132,7 @@ dd{
 
 .pianeta__card--boundary-right{
     margin-right: 0;
-    width: calc(33.333333% - 10px);
+    /* width: calc(33.333333% - 10px); */
 }
 
 div#footer{
