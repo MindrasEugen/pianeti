@@ -126,7 +126,7 @@ dd{
 }
 
 .pianeta__card--boundary-left{
-    margin-left: 0;
+    margin-left: 10px;
     /* width: calc(33.333333% - 10px); */
 }
 
