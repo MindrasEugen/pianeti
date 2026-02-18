@@ -50,6 +50,7 @@ div#main{
     background-color: #fca311ff;
     padding: 20px;
     border: 3px solid #000000ff;
+    margin-bottom: 20px;
 }
 .sistema-solare_body{
     font-size: 19px;
@@ -89,7 +90,7 @@ dd{
 }
 
 .pianeta-card{
-    width: calc(33.333333% - 20px);
+    width: calc(33.333333% - 40px / 3);
     border: 2px solid #000000ff;
     padding: 20px 0;
     display: inline-block;
@@ -102,6 +103,15 @@ dd{
     border-bottom: 2px ridge #000000ff;
     padding-bottom: 20px;
     margin: 0
+}
+
+div.pianeta-card__head:hover {
+    color: #fca311ff;
+    font-style: oblique;
+    font-size: 16px;
+    font-weight: 999;
+    text-decoration: underline;
+    /* box-shadow: 0 0 15px #14213dff; */
 }
 
 .pianeta-card__head h2{
@@ -142,7 +152,7 @@ div#footer{
 
 div div.pianeta-card:nth-of-type(3n+1){
     /* background-color: red; */
-    margin-left: 10px;
+    margin-left: 0px;
     /* width: calc(33.333333% - 10px); */
 }
 
