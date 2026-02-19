@@ -161,7 +161,7 @@ div.pianeta-card__head:hover {
 .pianeta-card__footer p:hover{
     border: 0 solid black;
     display: inline-block;
-    min-width: 75%;
+    min-width: 65%;
     border-radius: 999px;
     background-color: #14213dff;
     color: #fca311ff;
