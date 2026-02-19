@@ -25,7 +25,7 @@ div#header {
     /* background-color: #14213dff; */
     min-height: 250px;
     line-height: 250px;
-     background-image: radial-gradient(circle closest-side ,yellow 75% ,#14213dff );
+     background-image: radial-gradient(circle closest-side,#f3f39eff 30%,yellow 75% ,#14213dff );
 
 }
 
@@ -69,11 +69,12 @@ div#main{
 
 address{
     display: inline-block;
+    padding-left: 5px;
 }
 
 dt{
     display: inline-block;
-    min-width: 150px;
+    min-width: 9.375rem;
 }
 
 dd{
@@ -87,7 +88,7 @@ dd{
 .pianeta-container{
     margin: 0;
     background-color: #e5e5e5ff;
-    font-size: 0;
+    /* font-size: 0; */
     /* box-shadow: 3px 3px 3px black; */
 }
 
@@ -98,9 +99,10 @@ dd{
     padding-top: 0;
     /* display: inline-block; */
     float: left;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     margin: 0 10px 20px;
     box-shadow: inset 0 0 15px #fca311ff;
+    cursor: pointer;
 }
 .clearfix{
     clear: both;
@@ -160,7 +162,7 @@ div.pianeta-card__head:hover {
     border: 0 solid black;
     display: inline-block;
     min-width: 75%;
-    border-radius: 15px;
+    border-radius: 999px;
     background-color: #14213dff;
     color: #fca311ff;
     font-weight: 999;
