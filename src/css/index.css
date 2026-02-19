@@ -22,9 +22,10 @@ abbr{
 }
 
 div#header {
-    background-color: #14213dff;
+    /* background-color: #14213dff; */
     min-height: 250px;
     line-height: 250px;
+     background-image: radial-gradient(circle closest-side ,yellow 75% ,#14213dff );
 
 }
 
@@ -35,14 +36,14 @@ div#main{
 .sistema-solare_title{
     text-align: center;
     margin: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: capitalize;
 }
 .sistema-solare_title--principale {
     text-shadow: 2px 2px 2px #e5e5e5ff;
     word-spacing: 3px;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #fca311ff;
 }
 
@@ -53,7 +54,7 @@ div#main{
     margin-bottom: 20px;
 }
 .sistema-solare_body{
-    font-size: 19px;
+    font-size: 1.1875rem;
     line-height: 1.15;
 }
 
@@ -87,31 +88,46 @@ dd{
     margin: 0;
     background-color: #e5e5e5ff;
     font-size: 0;
+    /* box-shadow: 3px 3px 3px black; */
 }
 
 .pianeta-card{
     width: calc(33.333333% - 40px / 3);
     border: 2px solid #000000ff;
     padding: 20px 0;
-    display: inline-block;
-    font-size: 16px;
+    padding-top: 0;
+    /* display: inline-block; */
+    float: left;
+    font-size: 1rem;
     margin: 0 10px 20px;
-   
+    box-shadow: inset 0 0 15px #fca311ff;
+}
+.clearfix{
+    clear: both;
+}
+
+.pianeta-card:hover{
+    box-shadow: 0px 0px 15px #14213dff;
+    .pianeta-card__head{
+        background-color: #14213dff;
+        color: #fca311ff;
+    }
 }
 
 .pianeta-card__head{
     border-bottom: 2px ridge #000000ff;
     padding-bottom: 20px;
-    margin: 0
+    padding-top: 20px;
+    margin: 0;
 }
 
 div.pianeta-card__head:hover {
     color: #fca311ff;
-    font-style: oblique;
-    font-size: 16px;
+    /* font-style: oblique; */
+    font-size: 1rem;
     font-weight: 999;
-    text-decoration: underline;
-    /* box-shadow: 0 0 15px #14213dff; */
+    text-decoration: none;
+    box-shadow:inset 0 0 15px #fca311ff;
 }
 
 .pianeta-card__head h2{
@@ -131,9 +147,30 @@ div.pianeta-card__head:hover {
     text-align: center;
     border-top: 2px ridge #000000ff;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
 }
+
+.pianeta-card__footer p{
+    margin: 0;
+    padding: 0;
+}
+
+.pianeta-card__footer p:hover{
+    border: 0 solid black;
+    display: inline-block;
+    min-width: 75%;
+    border-radius: 15px;
+    background-color: #14213dff;
+    color: #fca311ff;
+    font-weight: 999;
+    /* box-shadow: inset 0 0 20px #fca311ff ; */
+
+}
+
+/* .pianeta-card__footer:hover{
+    border-radius: 30px;
+} */
 
 /* .pianeta__card--boundary-left{
     margin-left: 10px;
