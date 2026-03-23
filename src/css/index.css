@@ -4,54 +4,14 @@ orange: #fca311ff;
 alabaster-grey: #e5e5e5ff;
 white: #ffffffff; */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "EB Garamond", serif;
-    
-}
-
-abbr{
-    text-decoration: none;
-    font-style: italic;
-}
-
-div#header {
-    /* background-color: #14213dff; */
-    min-height: 250px;
-    line-height: 250px;
-     background-image: radial-gradient(circle closest-side,#f3f39eff 30%,yellow 75% ,#14213dff );
-
-}
-
-div#main{
-    padding: 20px 20px;
-    background-color: #e5e5e5ff;
-}
-.sistema-solare_title{
-    text-align: center;
-    margin: 0;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-}
-.sistema-solare_title--principale {
-    text-shadow: 2px 2px 2px #e5e5e5ff;
-    word-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 3.75rem;
-    color: #fca311ff;
-}
 
 .sistema-solare{
     background-color: #fca311ff;
     padding: 20px;
     border: 3px solid #000000ff;
     margin-bottom: 20px;
+    /* position: relative; */
 }
 .sistema-solare_body{
     font-size: 1.1875rem;
@@ -138,6 +98,11 @@ div.pianeta-card__head:hover {
 }
 .pianeta-card__body{
     padding: 20px 20px ;
+}
+
+.pianeta-card__body a{
+    text-decoration: none;
+    color: black;
 }
 
 .pianeta-card__body p{

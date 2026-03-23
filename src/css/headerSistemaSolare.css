@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "EB Garamond", serif;
+
+}
+
+abbr{
+    text-decoration: none;
+    font-style: italic;
+}
+
+div#header {
+    /* background-color: #14213dff; */
+    height: 250px;
+    /* line-height: 250px; */
+    background-image: radial-gradient(circle closest-side,#f3f39eff 30%,yellow 75% ,#14213dff );
+    overflow: visible;
+    position: relative;
+}
+
+div#header>nav {
+    line-height: 20px;
+}
+
+
+nav {
+    float:inline-end;
+    height: 30px;
+    padding-top: calc(250px - 30px);
+}
+
+nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li{
+    float: left;
+    width: 100px;
+}
+
+nav>ul>li>a{
+    display: block;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:last-of-type a {
+    border-right: none;
+}
+
+nav>ul>li>ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li>ul>li>a{
+    padding: 3px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+}
+
+nav>ul>li>ul>li:last-of-type a{
+    border-bottom: 1px solid white;
+}
+
+nav>ul>li>ul>li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    background-color: #14213dff;
+}
+
+nav ul :hover li{
+    opacity: 1;
+    transition: 0.6s;
+    background-color: #14213dff;
+    max-height: 600px;
+}
+
+nav ul li:hover a{
+    color: #fca311ff;
+}
+
+.dropdown h3{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    background-color:#fca311ff ;
+}
+
+.dropdown>.dropdown-content{
+    background-color: #e5e5e5ff;
+    float: left;
+    position: absolute;
+    left: 0;
+    top:calc(0 - 250px);
+    width: 100%;
+    /* min-height: 600px; */
+    
+}
+
+.dropdown-content{
+    list-style: none;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+}
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    transition: 0.6s;
+    min-height: 600px;
+}
+
+
+
+.column {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.column>a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: larger;
+    color: #14213dff;
+    text-align: center;
+}
+
+div#main{
+    padding: 20px 20px;
+    background-color: #e5e5e5ff;
+    /* position: relative; */
+}
+.sistema-solare_title{
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.sistema-solare_title--principale {
+    text-shadow: 2px 2px 2px #e5e5e5ff;
+    word-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    color: #fca311ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* float: left;
+    margin-left: 50%;
+    transform: translate(-50%); */
+
+}
